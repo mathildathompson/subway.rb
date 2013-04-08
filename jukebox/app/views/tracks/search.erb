@@ -1,0 +1,13 @@
+<h1>search</h1>
+<ul>
+<% @results.each do |x| %>
+  <li><%= x.title %></li>
+  <%= x.duration%> 
+ <!--  <li><%= x.inspect%></li> -->
+  <%= x.description%>
+  <img src ='<%= x.artwork_url%>'/>
+  <br>
+
+ <% end %>   
+</ul>
+
